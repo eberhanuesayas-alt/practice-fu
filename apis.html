@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+
+    </head>
+<body>
+
+<p id="demo"></p>
+<h1></h1>
+<h2> some time it is deficulte to memorize</h2>
+
+
+<div id="main">
+<p>javascript lesson 3 finding Html element by tagname</p>
+<p>so this is the example <b>get element bytagname.</b></p>
+
+</div>
+
+
+<p id="de"></p>
+<H1 id="F"> CSS style  finding html element</H1>
+<button onclick="document.getElementById('F').style.color ='red'">Click me!</button>
+<script>
+
+    const x = document.getElementById("main");
+    const y = x.getElementsByTagName("P");
+    document.getElementById("de").innerHTML=' The first paragraph (index 0) inside "main" is : '
+     
+    + y[0].innerHTML;
+
+// Access a paragraph Element
+const myPara = document.getElementById("demo");
+const Element = document.getElementsByTagName("h1")[0];
+Element.innerHTML = "Hello, I am berhanu and learning javascript at addis ababa";
+// Change the content of the Element
+myPara.innerHTML = "Hello World!";
+
+</script>
+<p id="d">this is a text going to be hidden and visisble when i click the button.</p>
+<input type="button" value="hide text" onclick="document.getElementById('d').style.visibility ='hidden'">
+<input type="button" value="show text" onclick="document.getElementById('d').style.visibility ='visible'">
+
+</body>
+</html>
